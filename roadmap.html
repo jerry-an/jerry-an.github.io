@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CoAlpha.AI roadmap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+     <!-- Navigation -->
+    <nav class="static-navbar navbar-expand-lg navbar-dark " id="static-mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="nav-logo" src="img/logos/nav-logo.png"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse static-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">We are <div class="caret"></div></a>
+              <ul>
+              <li><a href="https://docsend.com/view/2f2uixc" target="_blank">White paper</a></li>
+              <hr>
+              <li><a href="team.html#">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger">
+                {{menu[1]['disp']}}
+                <div class="caret"></div>
+              </a>
+              <ul>
+                <li v-for="(sub, sub_idx) in menu[1].subs">
+                  <a v-bind:href="sub['url']">{{sub['name']}}</a>
+                  <hr v-if="sub_idx < menu[1].subs.length - 1" />
+                </li>
+              </ul>
+
+            </li>
+            <li id="nav-item-announcements"class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Announcements<div class="caret"></div></a>
+              <ul>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <hr>
+              <li><a href="newslist.html">News</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-bg"><img src="img/page-bg.jpg">
+      <div class="page-title">
+        <h2>Roadmap</h2>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+    <section class="roadmap">
+    <table id="roadmap">
+  <tr>
+  </tr>
+  <tr>
+    <td>Jun. 2017</td>
+    <td>The project research begins;</td>
+  </tr>
+  <tr>
+    <td>Dec. 2017</td>
+    <td>Release the CoAlpha program and establish the community;</td>
+  </tr>
+  <tr>
+    <td>Jan. 2018</td>
+    <td>Launch the development of digital currency index investment strategy.</td>
+  </tr>
+  <tr>
+    <td>Mar. 2018</td>
+    <td>Start the private fund sale.</td>
+  </tr>
+  <tr>
+    <td>Apr. 2018</td>
+    <td>Release the digital currency index investment strategy.</td>
+  </tr>
+  <tr>
+    <td>May. 2018</td>
+    <td>Finish setup of the blockchain R&D team; 
+    Reach tentative collaboration agreement with mainstream cryptocurrency exchanges.</td>
+  </tr>
+  <tr>
+    <td>August. 2018</td>
+    <td>Complete the asset management protocol products MVP based on Ethereum.</td>
+  </tr>
+  <tr>
+    <td>Nov. 2018</td>
+    <td> Complete the asset management protocol products based on Ethereum and provide corresponding smart contracts from the funds end to the trading end. The platform 1.0 goes online, and the investment and community functions are available. </td>
+  </tr>
+  <tr>
+    <td>Dec. 2018</td>
+    <td>Operate the investment community, enrich the investment product system on the platform, and provide diversified investment products, such as index, quantitative arbitrage products, and index enhancement strategies etc.</td>
+  </tr>
+  <tr>
+    <td>In 2019 Q2</td>
+    <td>Migrate to better base blockchain. Help 3rd party developers to develop more applications for the ecosystem. Research own base blockchain solution based on feedback from all parties in the ecosystem.</td>
+  </tr>
+  <tr>
+    <td>In 2019 Q4</td>
+    <td>Blockchain goes online for application. The platform develops to be the first global fund product platform of digital currencies.</td>
+  </tr>
+</table>
+
+</section>
+</div>
+
+<footer>
+  <div class="container">
+  <div class="footer-copyright">
+    <p>Copyright © 2018 CoAlpha.AI</p>
+  </div>
+</div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/bootstrap-hover-dropdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/data.js"></script>
+
+  </body>
+</html>

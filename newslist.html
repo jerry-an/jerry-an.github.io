@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CoAlpha.AI StrategyPool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+        <!-- Navigation -->
+    <nav class="static-navbar navbar-expand-lg navbar-dark " id="static-mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="nav-logo" src="img/logos/nav-logo.png"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse static-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">We are <div class="caret"></div></a>
+              <ul>
+              <li><a href="https://docsend.com/view/2f2uixc" target="_blank">White paper</a></li>
+              <hr>
+              <li><a href="team.html#">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger">
+                {{menu[1]['disp']}}
+                <div class="caret"></div>
+              </a>
+              <ul>
+                <li v-for="(sub, sub_idx) in menu[1].subs">
+                  <a v-bind:href="sub['url']">{{sub['name']}}</a>
+                  <hr v-if="sub_idx < menu[1].subs.length - 1" />
+                </li>
+              </ul>
+
+            </li>
+            <li id="nav-item-announcements"class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Announcements<div class="caret"></div></a>
+              <ul>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <hr>
+              <li><a href="newslist.html">News</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-bg"><img src="img/page-bg.jpg">
+      <div class="page-title">
+        <h2>Newslist</h2>
+      </div>
+    </div>
+
+
+
+      <div class="container">
+       <section class="newslist">
+       </section>
+     </div>
+
+<footer id="newslist-footer">
+  <div class="container">
+  <div class="footer-copyright">
+    <p>Copyright © 2018 CoAlpha.AI</p>
+  </div>
+</div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/bootstrap-hover-dropdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/data.js"></script>
+
+  </body>
+</html>
