@@ -102,18 +102,6 @@ $(document).ready(function(){
 						]
 			        },
 			        {
-						'name': 'John Tang',
-						'avatar': 'img/team/2.jpg',
-						'intros':[
-							'Senior Quantitative Trader at Allston Trading in the United States, utilizing AI on High-frequeny trading',
-							'Former Director of Wells Fargo Bank (world\'s largest bank)',
-							'Responsible for Options product design and Pricing',
-							'Worked for Citibank, Guardian Life, DoubleClick (acquired by Google)',
-					        'Ph.D. from Massachusetts Institute of Technology,',
-					        'Bachelor of Science from Peking University.'
-						]
-					},
-			        {
 						'name': 'NED KEE',
 						'avatar': 'img/team/1.jpg',
 						'intros':[
