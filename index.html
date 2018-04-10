@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -14,327 +13,334 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/fonts.googleapis.Montserrat.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.Droid.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.Kaushan.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.Roboto.css" rel="stylesheet" type="text/css">
 
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
+</head>
 
-  </head>
+<body id="page-top">
 
-  <body id="page-top">
-
-       <!-- Navigation -->
-     <!-- Navigation -->
+    <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="static-navbar navbar-expand-lg navbar-dark " id="static-mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="nav-logo" src="img/logos/nav-logo.png"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse static-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">We are <div class="caret"></div></a>
-              <ul>
-              <li><a href="https://docsend.com/view/2f2uixc" target="_blank">White paper</a></li>
-              <hr>
-              <li><a href="team.html#">Team</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger">
-                {{menu[1]['disp']}}
-                <div class="caret"></div>
-              </a>
-              <ul>
-                <li v-for="(sub, sub_idx) in menu[1].subs">
-                  <a v-bind:href="sub['url']">{{sub['name']}}</a>
-                  <hr v-if="sub_idx < menu[1].subs.length - 1" />
-                </li>
-              </ul>
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="nav-logo" src="img/logos/nav-logo.png"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu<i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse static-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">We are <div class="caret"></div></a>
+                        <ul>
+                            <li><a href="https://docsend.com/view/2f2uixc" target="_blank">White paper</a></li>
+                            <hr>
+                            <li><a href="team.html#">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">{{menu[1]['disp']}}
+                          <div class="caret"></div>
+                        </a>
+                        <ul>
+                            <li v-for="(sub, sub_idx) in menu[1].subs">
+                                <a v-bind:href="sub['url']">{{sub['name']}}</a>
+                                <hr v-if="sub_idx < menu[1].subs.length - 1" />
+                            </li>
+                        </ul>
 
-            </li>
-            <li id="nav-item-announcements"class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#">Announcements<div class="caret"></div></a>
-              <ul>
-              <li><a href="roadmap.html">Roadmap</a></li>
-              <hr>
-              <li><a href="newslist.html">News</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-            </li>
-          </ul>
+                    </li>
+                    <li id="nav-item-announcements" class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Announcements<div class="caret"></div></a>
+                        <ul>
+                            <li><a href="roadmap.html">Roadmap</a></li>
+                            <hr>
+                            <li><a href="newslist.html">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container">
-        <div class="intro-logo-wrap">
-          <div class="intro-main-logo">
-            <img class="main-logo" src="img/logos/main-logo.png">
-          </div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://docsend.com/view/2f2uixc" target="_blank" >WHITE PAPER</a>
+        <div class="container">
+            <div class="intro-logo-wrap">
+                <div class="intro-main-logo">
+                    <img class="main-logo" src="img/logos/main-logo.png">
+                </div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://docsend.com/view/2f2uixc" target="_blank">WHITE PAPER</a>
+            </div>
         </div>
-      </div>
     </header>
 
 
 
-  <!-- CAI CHAIN -->
+    <!-- CAI CHAIN -->
     <section class="caichains">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Application</h2>
-            <h3 class="section-subheading"></h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="section-subtitle">
-              <h2>Cryptocurrency Asset Management</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Application</h2>
+                    <h3 class="section-subheading"></h3>
+                </div>
             </div>
-              <div class="caichains-icon">
-          </div>
-            <div class="application-description">
-              <p style="text-align:left">The cryptocurrency investment fund market has many problems such as lack of transparency, risk management control, hard to scale due to safety and trust level. Through the CoAlpha Smart Contract, individual investors can leverage professional asset manager's investment skills while making sure the net value is real and risk management is in place. In return, asset manager can issue investment product easily, can grow their asset under management while focusing on investing. </p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="section-subtitle">
+                        <h2>Cryptocurrency Asset Management</h2>
+                    </div>
+                    <div class="caichains-icon">
+                    </div>
+                    <div class="application-description">
+                        <p style="text-align:left">The cryptocurrency investment fund market has many problems such as lack of transparency, risk management control, hard to scale due to safety and trust level. Through the CoAlpha Smart Contract, individual investors can leverage
+                            professional asset manager's investment skills while making sure the net value is real and risk management is in place. In return, asset manager can issue investment product easily, can grow their asset under management while
+                            focusing on investing. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="section-subtitle">
+                        <h2>Institutional Cryptocurrency Internal Control</h2>
+                    </div>
+                    <div class="caichains-icon">
+                    </div>
+                    <div class="application-description">
+                        <p style="text-align:left">Institution and corporation who owns cryptocurrency asset need a good way to audit their asset value changes, can also leverage our system to achieve better transparency, risk monitoring and management.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="section-subtitle">
+                        <h2>Cryptocurrency Investment Rating Platform</h2>
+                    </div>
+                    <div class="caichains-icon">
+                    </div>
+                    <div class="application-description">
+                        <p style="text-align:left">Based on immutable actual performance data, investors can compare and discover good investment products that matches their risk preference and investment style.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="section-subtitle">
-              <h2>Institutional Cryptocurrency Internal Control</h2>
+    </section>
+
+    <!-- BENIFITS -->
+    <section class="benifits">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">benifits</h2>
+                    <h3 class="section-subheading "></h3>
+                </div>
             </div>
-            <div class="caichains-icon">
-          </div>
-            <div class="application-description">
-              <p style="text-align:left">Institution and corporation who owns cryptocurrency asset need a good way to audit their asset value changes, can also leverage our system to achieve better transparency, risk monitoring and management.</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="benifits-icon">
+                        <a class="benifits-link" data-toggle="modal" href="#">
+                            <div class="benifits-hover">
+                                <div class="benifits-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/excellent-team.png" alt="">
+                        </a>
+                    </div>
+                    <div class="benifits-description">
+                        <h2 style="text-align:center">Excellent Team</h2>
+                        <p>The CoAlpha team has solid background of blockchain technology, distributed big data processing, investment management, quantitative transactions, financial derivatives, fund raising & marketing, artificial intelligence, and internet
+                            product planning and operations. The advisors have extensive resources in investment, exchanges, and blockchain and cryptocurrency network and have great industry influence. The team has a strong constituency that can attract
+                            all parties in the ecosystem to participate in ecological construction. Core members and advisors are from well-known universities as Stanford, MIT, Wharton, New York University, Peking University, Fudan University, and Xi'an
+                            Jiaotong University, and they have been cultivating for more than ten years in their respective industries and served in such large companies as Citadel LLC, Wells Fargo, Goldman Sachs, Tencent, Thunder, etc.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="benifits-icon">
+                        <a class="benifits-link" data-toggle="modal" href="#">
+                            <div class="benifits-hover">
+                                <div class="benifits-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/platform.png" alt="">
+                        </a>
+                    </div>
+                    <div class="benifits-description">
+                        <h2 style="text-align:center">Platform & Community</h2>
+                        <p>At present, digital asset management is still in the "Blue Ocean" stage. With rich experience in the financial industry, the team can build a blockchain protocol and application system more professionally and efficiently. At the
+                            same time, the team will help accumulate investment profits through the operation and development of asset management products on the CoAlpha platform, and will attract more exchanges and individual investors. With good user
+                            traffic, it can motivate outstanding professional asset managements and data service providers to join in, hence forming a virtuous circle. The user viscosity is increased by developing corresponding DApp with user scenarios
+                            and operating personal asset management community.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="benifits-icon">
+                        <a class="benifits-link" data-toggle="modal" href="#">
+                            <div class="benifits-hover">
+                                <div class="benifits-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/growing-market.png" alt="">
+                        </a>
+                    </div>
+                    <div class="benifits-description">
+                        <h2 style="text-align:center">Fast-growing Market</h2>
+                        <p>The cryptocurrency market has great potential, and the open mindedness of the team is conducive to rapid growth. According to CoinMarketCap.com, the total market value of digital assets currently in circulation is hundreds of billions
+                            of dollars, and thousands of digital currencies are waiting to be listed and circulated. The potential for market size development is huge. At the same time, the opportunities for profiting from pre-ICO investment would diminish.
+                            Since the bull and bear markets appear alternatively, the demand for specialized asset management services will be stronger, and the asset management business will have explosive growth. We believe in the bright future of this
+                            emerging industry and the huge market size. We will adhere to our open mindset, welcome excellent teams to join this industry, and jointly promote the healthy and rapid development of the industry.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="section-subtitle">
-              <h2>Cryptocurrency Investment Rating Platform</h2>
+        </div>
+    </section>
+
+    <!--- K line -->
+    <section class="kline">
+        <div class="k-line title">
+            <h2 class="section-heading text-uppercase">Coalpha Cryptocurrency Investment Fund</h2>
+        </div>
+        <div class="kline-graphic">
+        </div>
+        <div class="kline-description container">
+            <h2>CoAlpha Index Product And Smart Factor Product</h2>
+            <p style="text-align:left">The CoAlpha index products are cryptocurrency investment products that use index strategy. Index strategy is actually a simple quantitative strategy, having a higher yield risk ratio than investing in a single cryptocurrency because of investment
+                diversification and dynamic adjustment. Easy to understand and deal with, it has large capacity, suitable for large-scale capital allocation, or investors who understand shallow digital currency and favor simple strategy. CoAlpha team
+                is open to collaborate with exchanges and data providers to create customized co-branded index products that are easy to realize on their platform, such as based on their settlement price and active token portfolio. <a href="strategies-crypto.html"
+                    class="learn-more">Learn More</a>
+            </p>
+        </div>
+        <div class="kline-description container">
+            <h2>CoAlpha Proprietary Quantitative Strategies</h2>
+            <p style="text-align:left">The CoAlpha Proprietary Quantitative Strategies are cryptocurrency investment products that use sophisticated financial engineering and quantitative technologies such as statistical modeling, machine learning, market structure and risk management
+                techniques. Such products are results of years expertise in financial trading industry, can capture the inefficiency market in an automated fashion and can have high Sharpe ratio, but are relatively complicated and secretive in nature
+                to maximize investor's benefits. These type of quantitative strategies are usually only open for well selected accredited investors.
+                <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </p>
+        </div>
+
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">partners</h2>
+                </div>
             </div>
-            <div class="caichains-icon">
-          </div>
-            <div class="application-description">
-              <p style="text-align:left">Based on immutable actual performance data, investors can compare and discover good investment products that matches their risk preference and investment style.</p>
+            <div class="row seven-cols">
+                <div class="col-md-1 col-sm-4 ">
+                    <a class="partners-link" data-toggle="modal" href="#">
+                        <img class="img-fluid" src="img/partner1.png" alt="">
+                    </a>
+                </div>
+                <!--
+                <div class="col-md-1 col-sm-4">
+                    <a class="partners-link" data-toggle="modal" href="#">
+                        <img class="img-fluid" src="img/partner3.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-1 col-sm-4">
+                    <a class="partners-link" data-toggle="modal" href="#">
+                        <img class="img-fluid" src="img/partner4.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-1 col-sm-4">
+                    <a class="partners-link" data-toggle="modal" href="#">
+                        <img class="img-fluid" src="img/partner5.png" alt="">
+                    </a>
+                </div>
+                -->
+                <div class="col-md-1 col-sm-4">
+                    <a class="partners-link" data-toggle="modal" href="#">
+                        <img class="img-fluid" src="img/partner6.png" alt="">
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-</section>
+    </section>
 
-
-
-
-  <!-- BENIFITS -->
-  <section class="benifits">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">benifits</h2>
-          <h3 class="section-subheading "></h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 ">
-          <div class="benifits-icon">
-          <a class="benifits-link" data-toggle="modal" href="#">
-            <div class="benifits-hover">
-              <div class="benifits-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+    <!--- footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Social</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2">
+                        <div class="caichains-icon">
+                            <a class="application1-link" data-toggle="modal" href="#">
+                                <img class="img-fluid" src="img/twitter.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="caichains-icon">
+                            <a class="application2-link" href="#" data-toggle="modal">
+                                <img class="img-fluid" src="img/telegram.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 ">
+                        <div class="caichains-icon">
+                            <a class="application1-link" href="http://github.com/coalphaio" target="_blank">
+                                <img class="img-fluid" src="img/github.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="caichains-icon">
+                            <a class="application2-link" href="#" data-toggle="modal">
+                                <img class="img-fluid" src="img/steemit.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 ">
+                        <div class="caichains-icon">
+                            <a class="application1-link" href="#" data-toggle="modal">
+                                <img class="img-fluid" src="img/facebook.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="caichains-icon">
+                            <a class="application2-link" href="#" data-toggle="modal">
+                                <img class="img-fluid" src="img/linkedin.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img class="img-fluid" src="img/excellent-team.png" alt="">
-          </a>
-          </div>
-          <div class="benifits-description">
-            <h2 style="text-align:center">Excellent Team</h2>
-            <p >The CoAlpha team has solid background of blockchain technology, distributed big data processing, investment management, quantitative transactions, financial derivatives, fund raising & marketing, artificial intelligence, and internet product planning and operations. The advisors have extensive resources in investment, exchanges, and blockchain and cryptocurrency network and have great industry influence. The team has a strong constituency that can attract all parties in the ecosystem to participate in ecological construction. Core members and advisors are from well-known universities as Stanford, MIT, Wharton, New York University, Peking University, Fudan University, and Xi'an Jiaotong University, and they have been cultivating for more than ten years in their respective industries and served in such large companies as Citadel LLC, Wells Fargo, Goldman Sachs, Tencent, Thunder, etc.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="benifits-icon">
-          <a class="benifits-link" data-toggle="modal" href="#">
-            <div class="benifits-hover">
-              <div class="benifits-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="footer-copyright text-uppercase">Copyright © 2018 CoAlpha.AI</p>
+                </div>
             </div>
-            <img class="img-fluid" src="img/platform.png" alt="">
-          </a>
         </div>
-          <div class="benifits-description">
-            <h2 style="text-align:center">Platform & Community</h2>
-            <p >At present, digital asset management is still in the "Blue Ocean" stage. With rich experience in the financial industry, the team can build a blockchain protocol and application system more professionally and efficiently. At the same time, the team will help accumulate investment profits through the operation and development of asset management products on the CoAlpha platform, and will attract more exchanges and individual investors. With good user traffic, it can motivate outstanding professional asset managements and data service providers to join in, hence forming a virtuous circle. The user viscosity is increased by developing corresponding DApp with user scenarios and operating personal asset management community.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 ">
-          <div class="benifits-icon">
-          <a class="benifits-link" data-toggle="modal" href="#">
-            <div class="benifits-hover">
-              <div class="benifits-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/growing-market.png" alt="">
-          </a>
-        </div>
-          <div class="benifits-description">
-            <h2 style="text-align:center">Fast-growing Market</h2>
-            <p >The cryptocurrency market has great potential, and the open mindedness of the team is conducive to rapid growth. According to CoinMarketCap.com, the total market value of digital assets currently in circulation is hundreds of billions of dollars, and thousands of digital currencies are waiting to be listed and circulated. The potential for market size development is huge. At the same time, the opportunities for profiting from pre-ICO investment would diminish. Since the bull and bear markets appear alternatively, the demand for specialized asset management services will be stronger, and the asset management business will have explosive growth. We believe in the bright future of this emerging industry and the huge market size. We will adhere to our open mindset, welcome excellent teams to join this industry, and jointly promote the healthy and rapid development of the industry.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!--- K line -->
-  <section class="kline">
-    <div class="k-line title">
-      <h2 class="section-heading text-uppercase">Coalpha Cryptocurrency Investment Fund</h2>
-    </div>
-    <div class="kline-graphic">
-    </div>
-      <div class="kline-description container">
-        <h2>CoAlpha Index Product And Smart Factor Product</h2>
-        <p style="text-align:left">The CoAlpha index products are cryptocurrency investment products that use index strategy. Index strategy is actually a simple quantitative strategy, having a higher yield risk ratio than investing in a single cryptocurrency because of investment diversification and dynamic adjustment. Easy to understand and deal with, it has large capacity, suitable for large-scale capital allocation, or investors who understand shallow digital currency and favor simple strategy. CoAlpha team is open to collaborate with exchanges and data providers to create customized co-branded index products that are easy to realize on their platform, such as based on their settlement price and active token portfolio. <a href="strategies-crypto.html" class="learn-more">Learn More</a>
-        </p>
-      </div>
-      <div class="kline-description container">
-        <h2>CoAlpha Fine Quantification Strategy</h2>
-        <p style="text-align:left">The CoAlpha Proprietary Quantitative Strategies are cryptocurrency investment products that use sophisticated financial engineering and quantitative technologies such as statistical modeling, machine learning, market structure and risk management techniques. Such products are results of years expertise in financial trading industry, can capture the inefficiency market in an automated fashion and can have high Sharpe ratio, but are relatively complicated and secretive in nature to maximize investor's benefits. These type of quantitative strategies are usually only open for well selected accredited investors.
-         <!-- <a href="#" class="learn-more">Learn More</a> -->
-        </p>
-      </div>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/jquery-latest.min.js"></script>
 
-  </section>
+    <!-- Custom scripts for this template -->
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/data.js"></script>
 
-  <!-- PARTNERS -->
-  <section class="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">partners</h2>
-        </div>
-      </div>
-      <div class="row seven-cols">
-        <div class="col-md-1 col-sm-4 ">
-          <a class="partners-link" data-toggle="modal" href="#">
-            <img class="img-fluid" src="img/partner1.png" alt="">
-          </a>
-        </div>
-        <!--
-        <div class="col-md-1 col-sm-4">
-          <a class="partners-link" data-toggle="modal" href="#">
-            <img class="img-fluid" src="img/partner3.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-1 col-sm-4">
-          <a class="partners-link" data-toggle="modal" href="#">
-            <img class="img-fluid" src="img/partner4.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-1 col-sm-4">
-          <a class="partners-link" data-toggle="modal" href="#">
-            <img class="img-fluid" src="img/partner5.png" alt="">
-          </a>
-        </div>
-        -->
-        <div class="col-md-1 col-sm-4">
-          <a class="partners-link" data-toggle="modal" href="#">
-            <img class="img-fluid" src="img/partner6.png" alt="">
-          </a>
-        </div>
-    </div>
-    </div>
-  </section>
+</body>
 
-
-
-
-  <!--- footer -->
-  <footer>
-    <div class="container">
-    <div class="social">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Social</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2 col-sm-2">
-            <div class="caichains-icon">
-          <a class="application1-link" data-toggle="modal" href="#">
-            <img class="img-fluid" src="img/twitter.png">
-          </a>
-        </div>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <div class="caichains-icon">
-          <a class="application2-link" href="#" data-toggle="modal" >
-            <img class="img-fluid" src="img/telegram.png">
-          </a>
-        </div>
-        </div>
-        <div class="col-md-2 col-sm-2 ">
-            <div class="caichains-icon">
-          <a class="application1-link"  href="http://github.com/coalphaio" target="_blank">
-            <img class="img-fluid" src="img/github.png">
-          </a>
-        </div>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <div class="caichains-icon">
-          <a class="application2-link" href="#" data-toggle="modal">
-            <img class="img-fluid" src="img/steemit.png">
-          </a>
-        </div>
-        </div>
-        <div class="col-md-2 col-sm-2 ">
-            <div class="caichains-icon">
-          <a class="application1-link" href="#" data-toggle="modal">
-            <img class="img-fluid" src="img/facebook.png">
-          </a>
-        </div>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <div class="caichains-icon">
-          <a class="application2-link" href="#" data-toggle="modal">
-            <img class="img-fluid" src="img/linkedin.png">
-          </a>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <p class="footer-copyright text-uppercase">Copyright © 2018 CoAlpha.AI</p>
-      </div>
-    </div>
-  </div>
-  </footer>
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/bootstrap-hover-dropdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="js/data.js"></script>
-
-  </body>
 </html>

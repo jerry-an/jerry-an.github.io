@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,208 +14,191 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/fonts.googleapis.Montserrat.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.Droid.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.Kaushan.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.googleapis.Roboto.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
     <!-- Navigation -->
     <nav class="static-navbar navbar-expand-lg navbar-dark " id="static-mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="nav-logo" src="img/logos/nav-logo.png"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse static-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">We are <div class="caret"></div></a>
-              <ul>
-              <li><a href="https://docsend.com/view/2f2uixc" target="_blank">White paper</a></li>
-              <hr>
-              <li><a href="team.html#">Team</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger">
-                {{menu[1]['disp']}}
-                <div class="caret"></div>
-              </a>
-              <ul>
-                <li v-for="(sub, sub_idx) in menu[1].subs">
-                  <a v-bind:href="sub['url']">{{sub['name']}}</a>
-                  <hr v-if="sub_idx < menu[1].subs.length - 1" />
-                </li>
-              </ul>
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="nav-logo" src="img/logos/nav-logo.png"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse static-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">We are <div class="caret"></div></a>
+                        <ul>
+                            <li><a href="https://docsend.com/view/2f2uixc" target="_blank">White paper</a></li>
+                            <hr>
+                            <li><a href="team.html#">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">
+                          {{menu[1]['disp']}}
+                          <div class="caret"></div>
+                        </a>
+                        <ul>
+                            <li v-for="(sub, sub_idx) in menu[1].subs">
+                                <a v-bind:href="sub['url']">{{sub['name']}}</a>
+                                <hr v-if="sub_idx < menu[1].subs.length - 1" />
+                            </li>
+                        </ul>
 
-            </li>
-            <li id="nav-item-announcements"class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#">Announcements<div class="caret"></div></a>
-              <ul>
-              <li><a href="roadmap.html">Roadmap</a></li>
-              <hr>
-              <li><a href="newslist.html">News</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-            </li>
-          </ul>
+                    </li>
+                    <li id="nav-item-announcements" class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Announcements<div class="caret"></div></a>
+                        <ul>
+                            <li><a href="roadmap.html">Roadmap</a></li>
+                            <hr>
+                            <li><a href="newslist.html">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
 
     <div class="page-bg"><img src="img/page-bg.jpg">
-      <div class="page-title">
-        <h2>Team</h2>
-      </div>
+        <div class="page-title">
+            <h2>Team</h2>
+        </div>
     </div>
 
 
-      <section class="team" id='teamlist'>
+    <section class="team" id='teamlist'>
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-sm-6" v-for="member in members">
-              <div class="section-subtitle">
-                <p><b>{{ member['name']}} </b>,&nbsp;{{member['title']}}</p>
-              </div>
-              <div class="team-image">
-                <a class="team1-link" data-toggle="modal" href="#team1">
-                  <img class="team-img-fluid" v-bind:src="member['avatar']" alt="">
-                </a>
-              </div>
-              <div>
-                <ul class="team-description">
-                  <li v-for="intro in member['intros']"
-                      style="font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+            <div class="row">
+                <div class="col-md-4 col-sm-6" v-for="member in members">
+                    <div class="section-subtitle">
+                        <p><b>{{ member['name']}} </b>,&nbsp;{{member['title']}}</p>
+                    </div>
+                    <div class="team-image">
+                        <a class="team1-link" data-toggle="modal" href="#team1">
+                            <img class="team-img-fluid" v-bind:src="member['avatar']" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <ul class="team-description">
+                            <li v-for="intro in member['intros']" style="font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
                              font-size: 10px;">
-                  {{intro}}
-                  </li>
-                </ul>
-              </div>
+                                {{intro}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="team-divide">
-          <hr>
-          <h2>Advisors</h2>
-          </div>
-          
-          <div class="row">
+            <div class="team-divide">
+                <hr>
+                <h2>Advisors</h2>
+            </div>
 
-            <div class="col-md-4 col-sm-6" v-for="member in advisors">
-              <div class="section-subtitle">
-                <p><b>{{ member['name']}} </b></p>
-              </div>
-              <div class="team-image">
-                <a class="team1-link" data-toggle="modal" href="#team1">
-                  <img class="team-img-fluid" v-bind:src="member['avatar']" alt="">
-                </a>
-              </div>
-              <div>
-                <ul class="team-description">
-                  <li v-for="intro in member['intros']"
-                      style="font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6" v-for="member in advisors">
+                    <div class="section-subtitle">
+                        <p><b>{{ member['name']}} </b></p>
+                    </div>
+                    <div class="team-image">
+                        <a class="team1-link" data-toggle="modal" href="#team1">
+                            <img class="team-img-fluid" v-bind:src="member['avatar']" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <ul class="team-description">
+                            <li v-for="intro in member['intros']" style="font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
                              font-size: 10px;">
-                  {{intro}}
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
+                                {{intro}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-          <div class="team-divide">
-          <hr>
-          <h2>Investors</h2>
-          </div>
+            </div>
 
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="section-subtitle">
-                <p>Fenbushi Capital</p>
-              </div>
-                <div class="team-image">
-              <a class="team1-link" data-toggle="modal" href="#team1">
-                <img class="team-img-fluid" src="img/team/3.jpg" alt="">
-              </a>
-              </div>
-              <div class="team-description">
-                <p>&bull;&nbsp;&nbsp;The first China-based venture capital firm that exclusively invests in Blockchain-enabled companies
-                  <br>&bull;&nbsp;&nbsp;Co-Founder includes Dr. Feng Xiao, Vice Chairment of Wanxiang Financial Holdings, founder of Bosera Asset Management; Bo Shen, co-founder of Invictus Innovation Inc. 12 years senior management in brokerages, hedge fund and investment banks; Vitalik Buterin, Founder of Ethereum, 2016, Fortune's elite list of 40 under 40s
-                  <br>&bull;&nbsp;&nbsp;Invested in over 50 blockchain companies covering the whole ecosystem of blockchain industry
-               </p>
-              </div>
+            <div class="team-divide">
+                <hr>
+                <h2>Investors</h2>
             </div>
-        
-		
-            <div class="col-md-6 col-sm-6">
-              <div class="section-subtitle">
-                <p>Shenlong Zhou</p>
-              </div>
-                <div class="team-image">
-              <a class="team1-link" data-toggle="modal" href="#team1">
-                <img class="team-img-fluid" src="img/team/4.jpg" alt="">
-              </a>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="section-subtitle">
+                        <p>Fenbushi Capital</p>
+                    </div>
+                    <div class="team-image">
+                        <a class="team1-link" data-toggle="modal" href="#team1">
+                            <img class="team-img-fluid" src="img/team/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="team-description">
+                        <p>&bull;&nbsp;&nbsp;The first China-based venture capital firm that exclusively invests in Blockchain-enabled companies
+                            <br>&bull;&nbsp;&nbsp;Co-Founder includes Dr. Feng Xiao, Vice Chairment of Wanxiang Financial Holdings, founder of Bosera Asset Management; Bo Shen, co-founder of Invictus Innovation Inc. 12 years senior management in brokerages,
+                            hedge fund and investment banks; Vitalik Buterin, Founder of Ethereum, 2016, Fortune's elite list of 40 under 40s
+                            <br>&bull;&nbsp;&nbsp;Invested in over 50 blockchain companies covering the whole ecosystem of blockchain industry
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="section-subtitle">
+                        <p>Shenlong Zhou</p>
+                    </div>
+                    <div class="team-image">
+                        <a class="team1-link" data-toggle="modal" href="#team1">
+                            <img class="team-img-fluid" src="img/team/4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="team-description">
+                        <p>&bull;&nbsp;&nbsp;Founder of Thunder, a NASDAQ listed company (XNET), B.S. from University of Wisconsin-Milwaukee, M.S. from Duke University
+                            <br>&bull;&nbsp;&nbsp;Thunder is a global leading provider of Cloud Accelerator, distributed storage, P2P technology and leading China service providers of CDN and cloud computing
+                        </p>
+                    </div>
+                </div>
             </div>
-              <div class="team-description">
-                <p>&bull;&nbsp;&nbsp;Founder of Thunder, a NASDAQ listed company (XNET), B.S. from University of Wisconsin-Milwaukee, M.S. from Duke University
-                  <br>&bull;&nbsp;&nbsp;Thunder is a global leading provider of Cloud Accelerator, distributed storage, P2P technology and leading China service providers of CDN and cloud computing
-               </p>
-              </div>
-            </div>
-		
-            <div class="col-md-6 col-sm-6" style="display:none">
-              <div class="section-subtitle">
-                <p>FreeS Fund</p>
-              </div>
-                <div class="team-image">
-              <a class="team1-link" data-toggle="modal" href="#team1">
-                <img class="team-img-fluid" src="img/team/5.jpg" alt="">
-              </a>
-            </div>
-              <div class="team-description">
-                <p>&bull;&nbsp;&nbsp;Leveraging the cutting-edge technologies and resources, FREES FUND aims at investing in great startups and helping them grow into great enterprises that are valuable to our society
-                  <br>&bull;&nbsp;&nbsp;Cornerstone investors of multiple blockchain projects
-               </p>
-              </div>
-            </div>
-		</div>          
-         
+
         </div>
-  </section>
+    </section>
 
-<footer>
-  <div class="container">
-  <div class="footer-copyright">
-    <p>Copyright © 2018 CoAlpha.AI</p>
-  </div>
-</div>
-</footer>
+    <footer>
+        <div class="container">
+            <div class="footer-copyright">
+                <p>Copyright © 2018 CoAlpha.AI</p>
+            </div>
+        </div>
+    </footer>
 
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/jquery-latest.min.js"></script>
 
-<!-- Custom scripts for this template -->
-<script src="js/bootstrap-hover-dropdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="js/data.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/data.js"></script>
 
-  </body>
+</body>
+
 </html>
