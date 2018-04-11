@@ -4,7 +4,7 @@ $(document).ready(function() {
         data: {
             global: {},
             stratReports: [{
-                'strat-name': 'CoAlpha Strategy(based on USD) ',
+                'strat-name': 'CoAlpha Strategy(based on BTC) ',
                 'industry-name': 'CoAlpha Inc.',
                 'description': 'The CoAlpha MOM30 index product is a cryptocurrency investment product that adopts index strategy. This index strategy is a simple quantitative strategy that dynamically adjusts the portfolio weights of 30 cryptocurrency based on market capital and momentum. It can achieve a higher return to risk ratio  than holding a single digital currency such as BTC, due to investment diversification and dynamic allocation.  In last year, this strategy has a return of 5418% with Sharpe Ratio 4.82 and Sortino Ratio 7.12, versus ETH\'s return of 129% with Sharpe Ratio 0.74 and Sortino Ratio 1.04. The advantages for this strategy are: better diversification, easy to understand, easy to implement the trade execution, and large capital capacity. So it is suitable for large scale asset allocation and less sophisticated investors.',
                 'stock-list-list': {
