@@ -6,7 +6,7 @@ $(document).ready(function() {
             stratReports: [{
                 'strat-name': 'CoAlpha Strategy(based on BTC) ',
                 'industry-name': 'CoAlpha Inc.',
-                'description': 'The CoAlpha MOM30 index product is a cryptocurrency investment product that adopts index strategy. This index strategy is a simple quantitative strategy that dynamically adjusts the portfolio weights of 30 cryptocurrency based on market capital and momentum. It can achieve a higher return to risk ratio  than holding a single digital currency such as BTC, due to investment diversification and dynamic allocation.  In last year, this strategy has a return of 5418% with Sharpe Ratio 4.82 and Sortino Ratio 7.12, versus ETH\'s return of 129% with Sharpe Ratio 0.74 and Sortino Ratio 1.04. The advantages for this strategy are: better diversification, easy to understand, easy to implement the trade execution, and large capital capacity. So it is suitable for large scale asset allocation and less sophisticated investors.',
+                'description': 'The CoAlpha MOM30 index product is a cryptocurrency investment product that adopts index strategy. This index strategy is a simple quantitative strategy that dynamically adjusts the portfolio weights of 30 cryptocurrency based on market capital and momentum. It can achieve a higher return to risk ratio  than holding a single digital currency such as BTC, due to investment diversification and dynamic allocation.  In last year, this strategy has a return of 4204% with Sharpe Ratio 4.66 and Sortino Ratio 5.54, versus ETH\'s return of 129% with Sharpe Ratio 0.74 and Sortino Ratio 1.04. The advantages for this strategy are: better diversification, easy to understand, easy to implement the trade execution, and large capital capacity. So it is suitable for large scale asset allocation and less sophisticated investors.',
                 'stock-list-list': {
                     "top": [],
                     "bottom": []
@@ -15,7 +15,7 @@ $(document).ready(function() {
             }, {
                 'strat-name': 'CoAlpha Strategy(based on ETH)',
                 'industry-name': 'CoAlpha Inc.',
-                'description': 'This product is based on ETH. In last year, this strategy has a return of 2674% with Sharpe Ratio 3.54 and Sortino Ratio 4.55, versus BTC\'s return of 78% with Sharpe Ratio 0.35 and Sortino Ratio 0.43.',
+                'description': 'This product is based on ETH. In last year, this strategy has a return of 2083% with Sharpe Ratio 3.29 and Sortino Ratio 4.23, versus BTC\'s return of 78% with Sharpe Ratio 0.35 and Sortino Ratio 0.43.',
                 'stock-list-list': {
                     "top": [],
                     "bottom": []
