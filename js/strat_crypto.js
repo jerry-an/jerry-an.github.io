@@ -41,9 +41,9 @@ $(document).ready(function() {
         }
 
     });
-    var usdChart = echarts.init(document.getElementById('Strategy-img-fluid-1'));
+    var btcChart = echarts.init(document.getElementById('Strategy-img-fluid-1'));
     $.get('js/crypto_btc.json', function(data) {
-        usdChart.setOption(option = {
+        btcChart.setOption(option = {
             title: {
                 subtext: 'MOM30Index:sharpe=4.95;sortino=5.87\nETH:sharpe=0.74;sortino=1.04'
             },
@@ -155,4 +155,12 @@ $(document).ready(function() {
             ]
         });
     });
+});
+$(window).on('resize', function(){
+        if(ethChart != null && ethChart != undefined){
+            ethChart.resize();
+        }
+        if(btcChart != null && btcChart != undefined){
+            btcChart.resize();
+        }
 });
