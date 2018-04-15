@@ -5,7 +5,7 @@ $(document).ready(function(){
 			members: [{
 						'title': 'CEO',
 						'name': 'James Wang',
-						'avatar': 'img/team/1.jpg',
+						'avatar': 'img/team/james.jpeg',
 						'intros':[
 							 'Ph.D., in Computer Science from New York University, B.S. from Peking University',
 							 '10 years US Finance & Technology industry experience',
@@ -17,7 +17,7 @@ $(document).ready(function(){
 					 {
 						'title': 'CTO',
 						'name': 'Jack OuYang',
-						'avatar': 'img/team/2.jpg',
+						'avatar': 'img/team/ouyang.png',
 						'intros':[
 							'Blockchain technical specialist',
 							'Proficient in Ethereum smart contract',
@@ -31,7 +31,7 @@ $(document).ready(function(){
                      {
 						'title': 'Director of Big Data Technology',
 						'name': 'Jerry An',
-						'avatar': 'img/team/2.jpg',
+						'avatar': 'img/team/jerryan.jpeg',
 						'intros':[
 							'Experienced in product R & D and project management',
 							'Former PM leading R & D team over one hundred people',
@@ -43,7 +43,7 @@ $(document).ready(function(){
 					 {
 						'title': 'Strategic Director',
 						'name': 'Howard Chen',
-						'avatar': 'img/team/2.jpg',
+						'avatar': 'img/team/hongwei.jpg',
 						'intros':[
 							'Responsible for global innovative technology investment in investment arm of one of BAT',
 							'Former Senior manager in Goldman Sachs and Carlyle Group',
@@ -54,7 +54,7 @@ $(document).ready(function(){
 					 {
 						'title': 'COO',
 						'name': 'Liam Wang',
-						'avatar': 'img/team/2.jpg',
+						'avatar': 'img/team/wangliu.jpg',
 						'intros':[
 							'Cornerstone Investors of multiple blockchain projects',
 							'Firm believer of blockchain technology',
@@ -79,7 +79,7 @@ $(document).ready(function(){
 			],
 			advisors: [{
 						'name': 'Tian Jia',
-						'avatar': 'img/team/1.jpg',
+						'avatar': 'img/team/jiatian.jpeg',
 						'intros':[
 							 'An evangelist of bitcoin and blockchain technology since 2011',
 							 'Shareholder of BitFinex',
