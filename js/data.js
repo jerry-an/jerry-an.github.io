@@ -84,7 +84,6 @@ $(document).ready(function(){
 							 'An evangelist of bitcoin and blockchain technology since 2011',
 							 'Shareholder of BitFinex',
 							 'Venture Advisor for ZhenFund',
-							 'Achieved over US$100 million in revenue',
 							 'Investor in 34 blockchain projects'
 						]
 			        },
