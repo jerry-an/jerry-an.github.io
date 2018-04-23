@@ -97,6 +97,7 @@ $(document).ready(function() {
                 }
             ]
         });
+     
     });
     var ethChart = echarts.init(document.getElementById('Strategy-img-fluid-2'));
     $.get('js/crypto_eth.json', function(data) {
@@ -154,13 +155,7 @@ $(document).ready(function() {
                 }
             ]
         });
+        
+        window.addEventListener('resize', function(){ btcChart.resize(); ethChart.resize(); } );
     });
-});
-$(window).on('resize', function(){
-        if(ethChart != null && ethChart != undefined){
-            ethChart.resize();
-        }
-        if(btcChart != null && btcChart != undefined){
-            btcChart.resize();
-        }
 });
