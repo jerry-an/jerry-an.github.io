@@ -66,7 +66,7 @@ $(document).ready(function(){
 					 {
 						'title': 'Director of Product & Sales',
 						'name': 'Sean Mao',
-						'avatar': 'img/team/2.jpg',
+						'avatar': 'img/team/seanmao.png',
 						'intros':[
 							'Executive director of KEYWISE CAPITAL, Hong Kong',
 							'Ph.D. from Stanford University',
@@ -79,18 +79,17 @@ $(document).ready(function(){
 			],
 			advisors: [{
 						'name': 'Tian Jia',
-						'avatar': 'img/team/jiatian.jpeg',
+						'avatar': 'img/team/tianjia.png',
 						'intros':[
 							 'An evangelist of bitcoin and blockchain technology since 2011',
 							 'Shareholder of BitFinex',
 							 'Venture Advisor for ZhenFund',
-							 'Achieved over US$100 million in revenue',
 							 'Investor in 34 blockchain projects'
 						]
 			        },
 			        {
 						'name': 'Pang Chau',
-						'avatar': 'img/team/1.jpg',
+						'avatar': 'img/team/pangchau.png',
 						'intros':[
 							 'Nearly 20 years of experience in quantitative finance',
 							 'Focuses on the application of machine learning in quantitative transactions',
