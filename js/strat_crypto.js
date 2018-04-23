@@ -155,7 +155,6 @@ $(document).ready(function() {
                 }
             ]
         });
-        
         window.addEventListener('resize', function(){ btcChart.resize(); ethChart.resize(); } );
     });
 });
